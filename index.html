@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body style="background-color: aquamarine;">
+    <h1 class="text-center">Async Javascript Practice</h1>
+
+    <div class="container border border-primary p-3">
+        <h4>Find Specific ToDo</h4>
+        <div class="row">
+            
+            <div class="col-6">
+                <input type="text" id="todo-input" placeholder="todo id.. " class="form-control w-50">
+                <button type="button" id="search-button" class="btn btn-info mt-3">Search</button>
+            </div>
+
+            <div class="col-6 " id="specifc-todo-container">
+                <!-- Will be filled from the fetch_api.js file -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-2 p-3">
+        <h4>Fetched Todos: <span id="total-todos"></span></h4>
+        <div class="row" id="todo-container">
+            <!-- <div class="col-md-4 border border-info m-1">
+                <ul>
+                    <li>Todo ID: 1</li>
+                    <li>User ID: 1</li>
+                    <li>Title: 1</li>
+                    <li>Completed: 1</li>
+                </ul>
+            </div>  -->
+        </div>
+    </div>
+    
+    <p class="text-center">@Copyright | Zayed Hassan</p>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+
+    <!-- <script src="first.js"></script> -->
+    <!-- <script src="promise.js"></script> -->
+    <!-- <script src="promiseChain.js"></script> -->
+    <!-- <script src="promise_all_and_race.js"></script> -->
+    <!-- <script src="async_await.js"></script> -->
+    <script src="fetch_api.js"></script>
+
+  </body>
+</html>
+    
